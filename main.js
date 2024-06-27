@@ -161,8 +161,8 @@ function checkCountry() {
 }
 
 if (width <= 630) {
-  logo.style.width = "60px";
-  logo.style.aspectRatio = "1/1";
+  document.querySelector(".img-head img").style.width = "50px";
+  document.querySelector(".img-head img").style.aspectRatio = "1/1";
 }
 
 logo.addEventListener("click", function () {
@@ -265,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var potes = document.querySelectorAll(".full-potential");
 const mn = document.querySelector("main");
-var is = document.querySelectorAll("#makeBig");
+var is = document.querySelectorAll(".full-potential i");
 var funCall;
 var as = document.querySelectorAll(".nav a");
 
