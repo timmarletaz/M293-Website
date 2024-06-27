@@ -67,6 +67,7 @@ textarea::-webkit-scrollbar-thum {
 /* Universelle Angaben */
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: $font;
@@ -123,6 +124,7 @@ section {
 p {
   font-size: 1em;
   margin-top: 10px;
+  
   font-weight: 800;
   color: $third-color;
 }
@@ -299,6 +301,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .img-head {
@@ -307,11 +310,10 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
-}
-
-.img-head img {
-  width: 90px;
-  margin-left: 10px;
+  img {
+    width: 90px;
+    margin-left: 10px;
+  }
 }
 
 .img-bitmoji {
@@ -341,7 +343,7 @@ nav {
   @include flexRow();
   align-items: none;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .socials {
@@ -421,6 +423,27 @@ nav {
   position: relative;
   transition: transform 0.5s ease-in-out;
   z-index: 1;
+
+  i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      color: #4a4b4b;
+    
+      &:hover {
+        cursor: pointer;
+        aspect-ratio: 1/1;
+        height: 100%;
+        border-radius: 20px;
+        background-color: #c6d6f0;
+        display: grid;
+        place-items: center;
+        color: #718abd;
+      }
+  }
+
 }
 
 .potential {
@@ -429,26 +452,6 @@ nav {
   border-radius: 35px;
   position: absolute;
   transition: 1s ease-in-out;
-}
-
-#makeBig {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  color: #4a4b4b;
-
-  &:hover {
-    cursor: pointer;
-    aspect-ratio: 1/1;
-    height: 100%;
-    border-radius: 20px;
-    background-color: #c6d6f0;
-    display: grid;
-    place-items: center;
-    color: #718abd;
-  }
 }
 
 .fullscreen {
@@ -1025,7 +1028,7 @@ footer {
   }
 
   .div-socials {
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .text-break {
