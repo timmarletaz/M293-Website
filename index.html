@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <script id="fontAwesome" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="img/favicon2.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tim Marlétaz</title>
+        <meta name="keywords"
+            content="Tim Marletaz, Tim Marlétaz, tim marletaz, tim, Modul 293, eportfolio, Informatiker, HTML, CSS, Javascript">
+        <meta name="description" content="Ein Eportfolio von Tim Marlétaz">
+        <meta name="author" content="Tim Marlétaz">
+        <meta name="theme-color" content="#bed4f7">
+    </head>
+    <body>
+
+        <div id="mobContent">
+            <span class="closeMob" onclick="closeDrawer()"><i
+                    class="fa-solid fa-xmark"></i></span>
+            <div class="mobNav">
+                <a href="#landing" id="mobHme" class="mobNavElem">Home</a>
+                <a href="#skills" id="mobSkll" class="mobNavElem">Skills</a>
+                <a href="#about" id="mobAbt" class="mobNavElem">About</a>
+                <a href="#kontakt" id="mobCnt" class="mobNavElem">Kontakt</a>
+            </div>
+        </div>
+        <span class="mobIcon" id="openMob"><i
+                class="fa-solid fa-circle-arrow-right" onclick="openDrawer()"
+                id="mobI"></i></span>
+
+        <header>
+
+            <div class="img-head">
+                <a class="img" id="logo" style="cursor: pointer;">
+                    <picture>
+                        <source media="(max-width: 630px)" srcset="img/logoSmall.webp">
+                        <img src="img/Logo-Top.webp" id="logo">
+                    </picture>
+                </a>
+            </div>
+
+            <nav id="nav">
+                <a href="#landing" id="landing-a">Home</a>
+                <a href="#skills" id="skills-a">Skills</a>
+                <a href="#about" id="about-a">About</a>
+                <a href="#kontakt" id="kontakt-a">Kontakt</a>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section class="landing" id="landing">
+
+                <div class="text">
+
+                    <div class="headline">
+                        <h1>Hey,<br class="text-break">
+                            ich bin <span
+                                style="color: #e34c00;">Tim</span></h1>
+
+                        <p>Informatiker im 1. Lehrjahr</p>
+                    </div>
+
+                    <a href="#about"><button class="about-btn">About <i
+                                class="fa fa-arrow-down"></i></button></a>
+
+                    <div class="div-socials">
+                        <a class="socials"
+                            href="https://stackoverflow.com/users/25496167/tim"
+                            aria-label="Stackoverflow" target="_blank"><i
+                                class="fa-brands fa-stack-overflow"></i></a>
+                        <a class="socials"
+                            href="https://www.github.com/timmarletaz"
+                            aria-label="Github" target="_blank"><i
+                                class="fa fa-github"></i>
+                            <a class="socials"
+                                href="https://ch.linkedin.com/in/tim-marl%C3%A9taz-6022ba303"
+                                aria-label="LinkedIn" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a class="socials"
+                                href="mailto:marletaztim@gmail.com?subject=Mail%von%20m293.netlify.app"
+                                aria-label="Mail" target="_blank"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="image">
+                        <img src="img/bitmoji.webp" alt="Bitmoji"
+                            class="img-bitmoji" id="bitmoji" quality="80">
+                    </div>
+
+                </section>
+
+                <section class="skills" id="skills">
+
+                    <div class="title">
+
+                        <h1>Meine Kentnisse</h1>
+                    </div>
+
+                    <div class="programming">
+
+                        <!--HTML-->
+
+                        <div class="language">
+                            <h2>HTML <i class="fab fa-html5"
+                                    style="font-size: inherit; color: #f06529;"></i></h2>
+
+                            <div class="full-potential" id="html">
+                                <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"
+                                    id="makeBig"></i>
+                                <div class="potential"
+                                    style="width: 85%; background-color: #f06529;"></div>
+                            </div>
+
+                        </div>
+
+                        <!--CSS-->
+
+                        <div class="language">
+                            <h2>CSS <i class="fab fa-css3"
+                                    style="font-size: inherit; color: #2965f1;"></i></h2>
+
+                            <div class="full-potential" id="css">
+                                <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"
+                                    id="makeBig"></i>
+                                <div class="potential"
+                                    style="width: 65%; background-color: #2965f1;"></div>
+                            </div>
+
+                        </div>
+
+                        <!--JavaScript-->
+
+                        <div class="language">
+                            <h2>Vue/Js <i class="fab fa-vuejs"
+                                    style="font-size: inherit; color: #42b883;"></i></h2>
+                            <div class="full-potential" id="js">
+                                <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"
+                                    id="makeBig"></i>
+                                <div class="potential"
+                                    style="width: 75%; background-color: #42b883;;"></div>
+                            </div>
+
+                        </div>
+
+                        <!--Java-->
+
+                        <div class="language">
+                            <h2>Java <i class="fab fa-java"
+                                    style="font-size: inherit; color: #bc0b19;"></i></h2>
+
+                            <div class="full-potential" id="java">
+                                <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"
+                                    id="makeBig"></i>
+                                <div class="potential"
+                                    style="width: 53%; background-color: #bc0b19;"></div>
+
+                            </div>
+
+                        </div>
+
+                        <!--Python-->
+
+                        <div class="language">
+                            <h2>Python <i class="fab fa-python"
+                                    style="font-size: inherit; color: #ffe873;"></i></h2>
+
+                            <div class="full-potential" id="python">
+                                <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"
+                                    id="makeBig"></i>
+                                <div class="potential"
+                                    style="width: 54%; background-color: #ffe873;"></div>
+                            </div>
+
+                        </div>
+
+                        <!--Cyber-Security-->
+
+                        <div class="language">
+                            <h2>Cyber-Security <i
+                                    class="fa-solid fa-user-secret"
+                                    style="font-size: inherit; color: #203454;"></i></h2>
+
+                            <div class="full-potential" id="cs">
+                                <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center"
+                                    id="makeBig"></i>
+                                <div class="potential"
+                                    style="width: 75%; background-color: #203454;"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sklCont" id="sklCont">
+                <div class="sklTitleDiv">
+                    <i class="fa-solid fa-down-left-and-up-right-to-center"
+                        id="makeSmaller" onclick="removeFullscreen()"></i>
+                    <h1 id="sklTitle"></h1>
+                </div>
+                <div class="sklMain">
+                    <div class="mainText">
+                        <p id="sklText"></p>
+                    </div>
+
+                    <div class="mainImg">
+                        <a id="imgA"><img id="sklImage" alt="Bild zu Thema"
+                                quality="80" loading="lazy"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about" id="about">
+            <div class="title">
+                <h1>About</h1>
+            </div>
+
+            <div class="content" id="abtContent">
+                <div class="abtContainer">
+                    <img src="img/portrait.webp" alt="Portrait">
+
+                    <p>Guten Tag<br>Ich bin Tim Marlétaz Informatiklehrling bei
+                        der <a href="https://baloise.com" class="abtAnchor"
+                            target="_blank"><i
+                                class="fa-solid fa-link"></i>Baloise</a>
+                        im 1. Lehrjahr. Ich bin sehr Technikbegeistert und
+                        interessiere mich seit ich klein bin für die Informatik.
+                        Ich liebe es an Computern zu arbeiten und jedes Mal
+                        etwas neues zu entdecken und zu lernen.</p>
+
+                </div>
+
+                <div class="abtBoxes">
+
+                    <div class="box1"><p>Meine Hobbies:</p><i
+                            class="fa-solid fa-person-running"></i><i
+                            class="fa-solid fa-music"></i></div>
+                    <div class="box2"><p>Lieblingssprachen:</p><i
+                            class="fab fa-node-js"></i><i
+                            class="fab fa-python"></i></div>
+                    <div class="box3"><p>Interessen:</p><i
+                            class="fa-solid fa-gears"></i><i
+                            class="fa-solid fa-computer"></i></div>
+
+                </div>
+                <ul class="list">
+                    <li class="item"><div class="lstContent"><p>Meine
+                                Hobbies:</p><i
+                                class="fa-solid fa-person-running"></i><i
+                                class="fa-solid fa-music"></i></div></li>
+                    <li class="item"><div
+                            class="lstContent"><p>Lieblingssprachen:</p><i
+                                class="fab fa-node-js"></i><i
+                                class="fab fa-python"></i></div></li>
+                    <li class="item"><div
+                            class="lstContent"><p>Interessen:</p><i
+                                class="fa-solid fa-gears"></i><i
+                                class="fa-solid fa-computer"></i></div></li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="kontakt" id="kontakt">
+            <div class="title">
+                <h1 id="kh">Kontakt</h1>
+            </div>
+
+            <form method="POST" action="https://formcarry.com/s/vnBDu4KXI6Z"
+                enctype="multipart/form-data">
+
+                <div class="formContainer">
+
+                    <label for="Vorname">Vorname</label>
+                    <input id="Vorname" name="Vorname" type="text"
+                        maxlength="20" required
+                        title="Ihr Name muss aus einem Gross- und mind. 2 Kleinbuchstaben bestehen"
+                        placeholder="Ihr Vorname...">
+
+                    <label for="Nachname">Nachname</label>
+                    <input id="Nachname" name="Nachname" type="text"
+                        maxlength="30" required
+                        title="Ihr Name muss aus einem Gross- und mind. 2 Kleinbuchstaben bestehen"
+                        placeholder="Ihr Nachname...">
+
+                    <label for="Land">Land</label>
+                    <select id="Land" name="Land">
+                        <option selected>Wählen Sie ihr Land</option>
+                        <optgroup label="Nachbarländer der Schweiz">
+                            <option>Schweiz</option>
+                            <option>Deutschland</option>
+                            <option>Österreich</option>
+                            <option>Italien</option>
+                            <option>Frankreich</option>
+                            <option>Fürstentum Lichtenstein</option>
+                        </optgroup>
+                        <optgroup label="Andere europäische Länder">
+                            <option>Belgien</option>
+                            <option>Luxemburg</option>
+                            <option>Niederlande</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="TelNum">Telefonnummer</label>
+                    <input id="TelNum" type="tel" name="TelNum">
+
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" maxlength="300"
+                        required></textarea>
+
+                    <label for="file" class="file"><i
+                            class="fa-solid fa-cloud-arrow-up"></i>
+                        Dateien</label>
+                    <input type="file" id="file" name="file" hidden
+                        accept=".doc, .docx, .txt, .pdf">
+                    <span id="fileText">Keine Dateien ausgewählt</span>
+
+                    <button type="submit" id="submit" name="submit">Senden <i
+                            class="fa-solid fa-paper-plane"></i></button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!--Footer Section-->
+        <footer>
+
+            <div class="content">
+
+                <div class="footHeader" style="margin-top: 20px;">
+                    <p>&copy;Tim Marlétaz 2024<br>Alle Rechte vorbehalten</p>
+                </div>
+
+                <div class="div-socials">
+                    <a class="socials"
+                        href="https://stackoverflow.com/users/25496167/tim"
+                        aria-label="Stackoverflow" target="_blank"><i
+                            class="fa-brands fa-stack-overflow"></i></a>
+                    <a class="socials" href="https://www.github.com/timmarletaz"
+                        aria-label="Github" target="_blank"><i
+                            class="fa fa-github"></i>
+                        <a class="socials"
+                            href="https://ch.linkedin.com/in/tim-marl%C3%A9taz-6022ba303"
+                            aria-label="LinkedIn" target="_blank"><i
+                                class="fa fa-linkedin"></i></a>
+                        <a class="socials"
+                            href="mailto:marletaztim@gmail.com?subject=Mail%von%20m293.netlify.app"
+                            aria-label="Mail" target="_blank"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <div class="agb">
+                        <a href="about.html">Über dieses Projekt</a>
+                    </div>
+                </div>
+
+            </footer>
+
+        </main>
+
+    </body>
+</html>
+<script src="main.js"></script>

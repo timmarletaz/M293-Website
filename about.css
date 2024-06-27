@@ -1,0 +1,234 @@
+@font-face {
+    font-family: wobbly;
+    src: local(POUTTU),
+    url('/font/POUTTU__.woff') format('woff');
+}
+
+@font-face {
+    font-family: JustSans;
+    src: local(JustSans),
+    url('/font/JUSTSansReg.woff2') format('woff2');
+}
+
+
+:root{
+    --primary-color: #bed4f7;
+    --font: helvetica, sans-serif;
+    --secondary-color: #0e418d;
+    --third-color: #222831;
+    --altFont: wobbly, helvetica;
+    --mainBackground: #3f5e9c;
+    --navAfter: #585858;
+}
+
+main::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+ main::-webkit-scrollbar-track {
+    background: #bed4f7; 
+  }
+   
+
+main::-webkit-scrollbar-thumb {
+    background: #0e418d; 
+    border-radius: 2px;
+    box-shadow: 2px 2px 20px black;
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 850;
+    color: var(--primary-color);
+    padding: 5px;
+    width: 100%;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    user-select: none;
+    font-display: auto;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+
+html{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body { 
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--mainBackground);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.home {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    transition: 0.1s linear;
+    opacity: 0;
+    a{
+        color: #f1f1f1;
+        text-decoration: none;
+        font-family: JustSans, helvetica;
+        padding: 15px;
+        cursor: pointer;
+        background-color: var(--secondary-color);
+        border-radius: 15px;
+        -webkit-box-shadow: 2px 2px 23px 5px rgba(0,0,0,0.8); 
+        box-shadow: 2px 2px 23px 5px rgba(0,0,0,0.8);
+    }
+    a:hover{
+        opacity: 0.8;
+    }
+}
+
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: var(--third-color);
+    height: fit-content;
+    min-height: 13%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    width: 100%;
+    height: 87vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh; 
+    background-color: var(--mainBackground);
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    display: block;
+}
+
+iframe{
+    width: 75%;
+    aspect-ratio: 16/9;
+    max-width: 700px;
+    max-height: 400px;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+.questions{
+    width: 75%;
+    display: flex;
+    max-width: 1200px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    background-color: var(--third-color);
+    border-radius: 25px;
+}
+
+.questions .wrapper{
+    padding: 60px;
+    box-sizing: border-box;
+    a{
+        text-decoration: underline;
+        color: #f1f1f1;
+    }
+}
+
+h2{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    font-weight: 800;
+    padding: 25px;
+}
+
+details{
+    font-family: JustSans, helvetica;
+    font-weight: 900;
+    padding: 10px;
+    p{
+        font-family: JustSans, helvetica;
+        padding-left: 15px;
+        text-align: justify;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        margin-top: 10px;
+        font-weight: normal;
+    }
+}
+
+
+footer{
+    display: grid;
+    place-items: center;
+    min-height: 20vh;
+    width: 100%;
+    scroll-snap-align: start;
+    background-color: var(--third-color);
+    p{
+        font-family: JustSans, helvetica;
+        width: 100%;
+        text-align: center;
+        color: #f1f1f1;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px){
+    iframe{
+        width: 95%;
+    }
+
+    .questions{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    main::-webkit-scrollbar{
+        width: 0;
+    }
+}
