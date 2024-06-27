@@ -42,6 +42,7 @@ textarea::-webkit-scrollbar-thum {
 
 /* Universelle Angaben */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: helvetica, sans-serif;
@@ -271,6 +272,7 @@ nav a:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .img-head {
@@ -280,7 +282,6 @@ nav a:hover:after {
   display: flex;
   align-items: center;
 }
-
 .img-head img {
   width: 90px;
   margin-left: 10px;
@@ -320,7 +321,7 @@ nav a:hover:after {
   justify-content: center;
   align-items: none;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .socials {
@@ -397,16 +398,7 @@ nav a:hover:after {
   transition: transform 0.5s ease-in-out;
   z-index: 1;
 }
-
-.potential {
-  height: 100%;
-  min-height: 20px;
-  border-radius: 35px;
-  position: absolute;
-  transition: 1s ease-in-out;
-}
-
-#makeBig {
+.full-potential i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -414,7 +406,7 @@ nav a:hover:after {
   z-index: 1000;
   color: #4a4b4b;
 }
-#makeBig:hover {
+.full-potential i:hover {
   cursor: pointer;
   aspect-ratio: 1/1;
   height: 100%;
@@ -423,6 +415,14 @@ nav a:hover:after {
   display: grid;
   place-items: center;
   color: #718abd;
+}
+
+.potential {
+  height: 100%;
+  min-height: 20px;
+  border-radius: 35px;
+  position: absolute;
+  transition: 1s ease-in-out;
 }
 
 .fullscreen {
@@ -959,7 +959,7 @@ footer .content a {
     justify-content: center;
   }
   .div-socials {
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .text-break {
     display: none;
